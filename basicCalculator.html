@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script>
+            var FirstNumber;
+            var SecondNumber;
+            var Result;
+            function _addition(){
+                var field1 = document.getElementById("number1").value;
+                var field2 = document.getElementById("number2").value;
+                var Result = parseFloat(field1) + parseFloat(field2);
+                document.getElementById("Answer").innerHTML="the Answer is " + Result;
+            }
+            function _subtraction(){
+                var field1 = document.getElementById("number1").value;
+                var field2 = document.getElementById("number2").value;
+                var Result = parseFloat(field1) - parseFloat(field2);
+                document.getElementById("Answer").innerHTML="the Answer is " + Result;
+            }
+            function _multiplication(){
+                var field1 = document.getElementById("number1").value;
+                var field2 = document.getElementById("number2").value;
+                var Result = parseFloat(field1) * parseFloat(field2);
+                document.getElementById("Answer").innerHTML="the Answer is " + Result;
+            }
+            function _division(){
+                var field1 = document.getElementById("number1").value;
+                var field2 = document.getElementById("number2").value;
+                var Result = parseFloat(field1) / parseFloat(field2);
+                document.getElementById("Answer").innerHTML="the Answer is " + Result;
+            }
+            </script>
+        </head>
+        <center><body bgcolor="green">
+            <form id="Form"><row><h1>Basic calculator</h1>
+                <centre><input type="text"placeholder="FirstNumber" id="number1" style="background-color: whitesmoke">
+                    <br><br>
+                <input type="text"placeholder="SecondNumber" id="number2" style="background-color: whitesmoke">
+                <br><br>
+                <input type="button" value="addition" onclick=" _addition()" style="background-color: rgb(104, 22, 22);">
+                <br><br>
+                <input type="button" value="subtraction" onclick=" _subtraction()" style="background-color: rgb(176, 223, 145);">
+                <br><br>
+                <input type="button" value="multiplication" onclick=" _multiplication()" style="background-color: rgb(168, 24, 252);">
+                <br><br>
+                <input type="button" value="division" onclick=" _division()" style="background-color: rgb(104, 22, 22);">
+                <br><br>
+                <h1 id="Answer"></h1>
+            </centre>
+            </row></form></body></center>
+</html>
